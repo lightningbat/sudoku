@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:textColor="#7c7c7c"
+        android:background="#fff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:gravity="center"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sound Effects"
+                android:textSize="15sp"
+                android:textColor="#7c7c7c"
+                android:layout_marginTop="120dp"
+                android:background="#fff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/settingsbutton_background"
+                android:onClick="change"
+                android:id="@+id/sound_effects"
+                android:tag="sound_effects" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mistakes Limit"
+                android:textSize="15sp"
+                android:textColor="#7c7c7c"
+                android:layout_marginTop="80dp"
+                android:background="#fff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="#5899f7"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/settingsbutton_background"
+                android:onClick="change"
+                android:id="@+id/mistakes_limit"
+                android:tag="mistakes_limit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HighLight Areas"
+                android:textSize="15sp"
+                android:textColor="#7c7c7c"
+                android:layout_marginTop="80dp"
+                android:background="#fff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="#5899f7"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/settingsbutton_background"
+                android:onClick="change"
+                android:id="@+id/highlight_areas"
+                android:tag="highlight_areas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HighLight Identical Numbers"
+                android:textSize="15sp"
+                android:textColor="#7c7c7c"
+                android:layout_marginTop="80dp"
+                android:background="#fff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="#5899f7"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/settingsbutton_background"
+                android:onClick="change"
+                android:id="@+id/highlight_identical_numbers"
+                android:tag="highlight_identical_numbers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto Remove Notes"
+                android:textSize="15sp"
+                android:textColor="#7c7c7c"
+                android:layout_marginTop="80dp"
+                android:background="#fff" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="#5899f7"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/settingsbutton_background"
+                android:onClick="change"
+                android:id="@+id/auto_remove_notes"
+                android:tag="auto_remove_notes" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

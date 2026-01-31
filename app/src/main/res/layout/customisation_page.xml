@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="Customisation"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="game_settings_page"
+            android:src="@drawable/setting_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of Clues"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="#fff"
+        android:textColor="#000"
+        android:id="@+id/text_above_CluesSelector" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_facing_arrow"
+            android:layout_gravity="center_vertical"/>
+
+        <HorizontalScrollView
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:scrollbars="none"
+            android:id="@+id/clues_selector_scrollview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:text="Any Random"
+                    android:textSize="25sp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:id="@+id/R_any_random"
+                    android:onClick="clues"
+                    android:tag="any_random"
+                    android:textColor="#8a8990" />
+
+                <TextView
+                    android:id="@+id/R_60_70"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:onClick="clues"
+                    android:tag="60_70"
+                    android:text="60  -  70"
+                    android:textColor="#8a8990"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:text="50  -  60"
+                    android:textSize="25sp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:id="@+id/R_50_60"
+                    android:onClick="clues"
+                    android:tag="50_60"
+                    android:textColor="#8a8990" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:text="40  -  50"
+                    android:textSize="25sp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:id="@+id/R_40_50"
+                    android:onClick="clues"
+                    android:tag="40_50"
+                    android:textColor="#8a8990" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:text="30  -  40"
+                    android:textSize="25sp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:id="@+id/R_30_40"
+                    android:onClick="clues"
+                    android:tag="30_40"
+                    android:textColor="#8a8990" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:text="20  -  30"
+                    android:textSize="25sp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:id="@+id/R_20_30"
+                    android:onClick="clues"
+                    android:tag="20_30"
+                    android:textColor="#8a8990" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/right_facing_arrow"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2px"
+        android:background="#8a8990"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/horizontal_line"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Limit"
+            android:textSize="25sp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <Switch
+            android:id="@+id/a_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:onClick="time_limit"
+            android:thumbTint="@drawable/switch_thumb_selector"
+            android:trackTint="@drawable/switch_track_selector" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/time_limit_setter"
+        android:visibility="invisible" >
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="5"
+            android:thumbTint="#5881f7"
+            android:progressTint="#7daefd"
+            android:id="@+id/seekBar"
+            android:max="60"
+            android:min="1"
+            android:background="#fff"
+            android:progress="5"
+            android:layerType="hardware"/>
+        <!-- progress tint not visible in dark mode -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:id="@+id/seekBar_result"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="5 min" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play_button_icon"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/play_button"
+        android:onClick="play" />
+
+</LinearLayout>
